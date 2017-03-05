@@ -1,6 +1,6 @@
 class BubbleSort extends Sort {
 		
-	public int[] sort ( int arr[]) {
+	public int[] sort ( int arr[], int first, int last) {
 	    
 	   	for (int j = 0; j<arr.length; j++) {
 	    	for (int k = arr.length - 1; k > j; k--) {

@@ -7,7 +7,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         String choice = input.nextLine();
         System.out.println();
-        Sort s;
+        Sort s = new Sort();
       
         switch (choice) {
             case "1":
