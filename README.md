@@ -1,5 +1,5 @@
 # Sorting
 
-javac Main.java
+javac -sourcepath ./src -d bin src/Main.java
 
-java Main
+java -classpath ./bin Main
