@@ -1,5 +1,5 @@
 class QuickSort extends Sort {
-	public int[]  sort( int arr[], int first, int last) {
+	public int[] qsort( int arr[], int first, int last) {
         
         int left, right, c;
         left = first; 
@@ -25,11 +25,11 @@ class QuickSort extends Sort {
 		}  
 
 		if (first < right) {		                                      
-			sort (arr, first, right);		   								   
+			qsort (arr, first, right);		   								   
 		}
 
 		if (left < last) { 
-			sort (arr, left, last); 
+			qsort (arr, left, last); 
 		}
 
         return arr;

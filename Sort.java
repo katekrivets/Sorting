@@ -1,10 +1,8 @@
 import java.util.Scanner;
 import java.util.*;
 import java.lang.*;
-
 class Sort {
 	public int enterLength () {
-
 		Scanner input = new Scanner(System.in);		
 		int n = 0;
 
@@ -33,8 +31,8 @@ class Sort {
 	}
 
 	public int[] enterArray ( int n) {
-        
-        Scanner input = new Scanner(System.in); 
+
+		Scanner input = new Scanner(System.in); 
 		System.out.print("Enter numbers:");
 		int[] arr = new int [n];
 
@@ -66,6 +64,14 @@ class Sort {
 
         return arr;
     }  
+
+    public int[] qsort(int arr[], int first, int last){
+		return arr;
+	}
+
+	public int[] bsort ( int arr[]){
+		return arr;
+	}
 
     void swap( int[] i, int a, int z ) {
 
