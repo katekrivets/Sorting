@@ -7,26 +7,23 @@ public class Main {
         Scanner input = new Scanner(System.in);
         String choice = input.nextLine();
         System.out.println();
+        Sort s;
       
         switch (choice) {
             case "1":
                 //Bubble Sort    
-            	Sort bubblesort = new BubbleSort();
-                int n = bubblesort.enterLength();                // array length
-                int arr[] = bubblesort.enterArray(n);            // filling
-                int k[] = bubblesort.bsort(arr);                  // bubblesort
-                int h[] = bubblesort.showResult(k);              // result
+            	s = new BubbleSort();
                 break;
             case "2":
-                Sort quicksort = new QuickSort();
-                int m = quicksort.enterLength();               // array length
-                int array[] = quicksort.enterArray(m);             // filling
-                int f[] = quicksort.qsort(array, 0, array.length - 1);   // quicksort
-                int l[] = quicksort.showResult(f);                 // result
+                s = new QuickSort();
                 break;
             default:
                 System.out.println("Symbol not found.");
 
         }
+                int n = s.enterLength();                // array length
+                int arr[] = s.enterArray(n);            // filling
+                int k[] = s.sort(arr, 0, arr.length - 1);  // sort
+                int h[] = s.showResult(k);              // result
     }
 }

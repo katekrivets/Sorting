@@ -65,15 +65,11 @@ class Sort {
         return arr;
     }  
 
-    public int[] qsort(int arr[], int first, int last){
+    public int[] sort (int arr[], int first, int last){
 		return arr;
 	}
 
-	public int[] bsort ( int arr[]){
-		return arr;
-	}
-
-    void swap( int[] i, int a, int z ) {
+	void swap( int[] i, int a, int z ) {
 
         int c = i[a];                                        
 		i[a] = i[z];
