@@ -1,0 +1,3 @@
+class NegativeArrayLengthException extends Exception {
+	
+}
